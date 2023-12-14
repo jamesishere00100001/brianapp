@@ -1,2 +1,2 @@
 # brianapp
-Support and Privacy Policy
+BrianApp Support and Privacy Policy
