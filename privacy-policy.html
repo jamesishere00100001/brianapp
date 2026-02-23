@@ -10,19 +10,19 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
-            background: #F2F2F7;
-            color: #1C1C1E;
+            background: #F0F4F0;
+            color: #1A2E1A;
             -webkit-font-smoothing: antialiased;
         }
 
         /* ── Header ── */
         header {
-            background: #0A0A1A;
+            background: #1C3D20;
             background-image:
-                radial-gradient(ellipse at 15% 60%, rgba(99, 102, 241, 0.35) 0%, transparent 55%),
-                radial-gradient(ellipse at 85% 20%, rgba(139, 92, 246, 0.25) 0%, transparent 50%),
-                radial-gradient(ellipse at 55% 90%, rgba(59, 130, 246, 0.2) 0%, transparent 45%);
-            color: #fff;
+                radial-gradient(ellipse at 15% 60%, rgba(74, 140, 74, 0.45) 0%, transparent 55%),
+                radial-gradient(ellipse at 85% 20%, rgba(45, 100, 50, 0.4) 0%, transparent 50%),
+                radial-gradient(ellipse at 55% 95%, rgba(30, 80, 35, 0.3) 0%, transparent 45%);
+            color: #EDE8C8;
             text-align: center;
             padding: 64px 24px 72px;
             position: relative;
@@ -33,7 +33,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background-image: radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-image: radial-gradient(circle, rgba(237,232,200,0.04) 1px, transparent 1px);
             background-size: 28px 28px;
             pointer-events: none;
         }
@@ -42,12 +42,13 @@
             width: 64px;
             height: 64px;
             border-radius: 18px;
-            background: linear-gradient(145deg, #10B981 0%, #34D399 100%);
+            background: rgba(237, 232, 200, 0.15);
+            border: 1px solid rgba(237, 232, 200, 0.2);
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 22px;
-            box-shadow: 0 8px 32px rgba(16, 185, 129, 0.5), 0 2px 8px rgba(0,0,0,0.25);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
         }
 
         .header-icon svg {
@@ -60,11 +61,12 @@
             font-weight: 700;
             letter-spacing: -0.5px;
             margin: 0 0 10px;
+            color: #EDE8C8;
         }
 
         header .tagline {
             font-size: 1rem;
-            color: rgba(255,255,255,0.45);
+            color: rgba(237, 232, 200, 0.5);
             margin: 0;
         }
 
@@ -86,7 +88,7 @@
             padding: 8px 14px 8px 10px;
             font-size: 0.875rem;
             font-weight: 500;
-            color: #6366F1;
+            color: #2D6A35;
             text-decoration: none;
             background: #fff;
             border-radius: 10px;
@@ -96,7 +98,7 @@
         }
 
         .back-link:hover {
-            background: #F5F3FF;
+            background: #EAF3EB;
             transform: translateX(-2px);
         }
 
@@ -113,13 +115,13 @@
             box-shadow:
                 0 1px 2px rgba(0,0,0,0.04),
                 0 4px 12px rgba(0,0,0,0.06),
-                0 16px 40px rgba(0,0,0,0.06);
+                0 16px 40px rgba(0,0,0,0.07);
             border: 1px solid rgba(0,0,0,0.045);
         }
 
         .card-stripe {
             height: 4px;
-            background: linear-gradient(90deg, #10B981, #34D399);
+            background: linear-gradient(90deg, #2D6A35, #4A9A54);
         }
 
         .card-body {
@@ -131,9 +133,9 @@
             display: inline-flex;
             align-items: center;
             gap: 7px;
-            background: #ECFDF5;
-            border: 1px solid #A7F3D0;
-            color: #059669;
+            background: #EAF3EB;
+            border: 1px solid #B8D9BB;
+            color: #2D6A35;
             font-size: 0.8125rem;
             font-weight: 600;
             padding: 6px 13px;
@@ -150,7 +152,7 @@
         p {
             font-size: 0.9375rem;
             line-height: 1.75;
-            color: #8E8E93;
+            color: #6B7C6B;
             margin: 0;
         }
 
@@ -159,8 +161,8 @@
             text-align: center;
             padding: 28px 24px;
             font-size: 0.8125rem;
-            color: #AEAEB2;
-            border-top: 1px solid #E5E5EA;
+            color: #9AAD9A;
+            border-top: 1px solid #DDE8DD;
             background: #fff;
         }
     </style>
@@ -169,7 +171,7 @@
 
     <header>
         <div class="header-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#EDE8C8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="3" y="11" width="18" height="11" rx="2"/>
                 <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
             </svg>

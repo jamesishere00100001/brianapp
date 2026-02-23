@@ -10,19 +10,19 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
-            background: #F2F2F7;
-            color: #1C1C1E;
+            background: #F0F4F0;
+            color: #1A2E1A;
             -webkit-font-smoothing: antialiased;
         }
 
         /* ── Header ── */
         header {
-            background: #0A0A1A;
+            background: #1C3D20;
             background-image:
-                radial-gradient(ellipse at 15% 60%, rgba(99, 102, 241, 0.35) 0%, transparent 55%),
-                radial-gradient(ellipse at 85% 20%, rgba(139, 92, 246, 0.25) 0%, transparent 50%),
-                radial-gradient(ellipse at 55% 90%, rgba(59, 130, 246, 0.2) 0%, transparent 45%);
-            color: #fff;
+                radial-gradient(ellipse at 15% 60%, rgba(74, 140, 74, 0.45) 0%, transparent 55%),
+                radial-gradient(ellipse at 85% 20%, rgba(45, 100, 50, 0.4) 0%, transparent 50%),
+                radial-gradient(ellipse at 55% 95%, rgba(30, 80, 35, 0.3) 0%, transparent 45%);
+            color: #EDE8C8;
             text-align: center;
             padding: 72px 24px 80px;
             position: relative;
@@ -33,25 +33,28 @@
             content: '';
             position: absolute;
             inset: 0;
-            background-image: radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-image: radial-gradient(circle, rgba(237,232,200,0.04) 1px, transparent 1px);
             background-size: 28px 28px;
             pointer-events: none;
         }
 
         .app-icon {
-            width: 84px;
-            height: 84px;
+            width: 96px;
+            height: 96px;
             border-radius: 24px;
-            background: linear-gradient(145deg, #6366F1 0%, #8B5CF6 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            overflow: hidden;
             margin: 0 auto 24px;
-            font-size: 2.25rem;
-            font-weight: 800;
-            color: #fff;
-            box-shadow: 0 8px 40px rgba(99, 102, 241, 0.55), 0 2px 8px rgba(0,0,0,0.3);
+            box-shadow:
+                0 8px 40px rgba(0, 0, 0, 0.35),
+                0 2px 8px rgba(0, 0, 0, 0.2),
+                0 0 0 1px rgba(255,255,255,0.08);
             position: relative;
+        }
+
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            display: block;
         }
 
         header h1 {
@@ -59,11 +62,12 @@
             font-weight: 700;
             letter-spacing: -0.75px;
             margin: 0 0 10px;
+            color: #EDE8C8;
         }
 
         header .tagline {
             font-size: 1.0625rem;
-            color: rgba(255,255,255,0.45);
+            color: rgba(237, 232, 200, 0.5);
             margin: 0;
             letter-spacing: 0.1px;
         }
@@ -86,7 +90,7 @@
             box-shadow:
                 0 1px 2px rgba(0,0,0,0.04),
                 0 4px 12px rgba(0,0,0,0.06),
-                0 16px 40px rgba(0,0,0,0.06);
+                0 16px 40px rgba(0,0,0,0.07);
             border: 1px solid rgba(0,0,0,0.045);
             transition: transform 0.18s ease, box-shadow 0.18s ease;
         }
@@ -101,14 +105,11 @@
 
         .card-stripe {
             height: 4px;
+            background: linear-gradient(90deg, #2D6A35, #4A9A54);
         }
 
-        .card-stripe.indigo {
-            background: linear-gradient(90deg, #6366F1, #A78BFA);
-        }
-
-        .card-stripe.emerald {
-            background: linear-gradient(90deg, #10B981, #34D399);
+        .card-stripe.alt {
+            background: linear-gradient(90deg, #3A7A42, #6AAF72);
         }
 
         .card-body {
@@ -130,10 +131,8 @@
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
+            background: #EAF3EB;
         }
-
-        .icon-circle.indigo { background: #EEF2FF; }
-        .icon-circle.emerald { background: #ECFDF5; }
 
         .icon-circle svg {
             width: 22px;
@@ -143,7 +142,7 @@
         h2 {
             font-size: 1.125rem;
             font-weight: 650;
-            color: #1C1C1E;
+            color: #1A2E1A;
             margin: 0;
             letter-spacing: -0.2px;
         }
@@ -151,12 +150,12 @@
         p {
             font-size: 0.9375rem;
             line-height: 1.72;
-            color: #8E8E93;
+            color: #6B7C6B;
             margin: 0;
         }
 
         a {
-            color: #6366F1;
+            color: #2D6A35;
             text-decoration: none;
             font-weight: 500;
         }
@@ -168,8 +167,8 @@
             text-align: center;
             padding: 28px 24px;
             font-size: 0.8125rem;
-            color: #AEAEB2;
-            border-top: 1px solid #E5E5EA;
+            color: #9AAD9A;
+            border-top: 1px solid #DDE8DD;
             background: #fff;
         }
     </style>
@@ -177,7 +176,9 @@
 <body>
 
     <header>
-        <div class="app-icon">B</div>
+        <div class="app-icon">
+            <img src="icon.png" alt="Brian app icon">
+        </div>
         <h1>Brian Support</h1>
         <p class="tagline">We're here to help</p>
     </header>
@@ -185,11 +186,11 @@
     <div class="container">
 
         <div class="card">
-            <div class="card-stripe indigo"></div>
+            <div class="card-stripe"></div>
             <div class="card-body">
                 <div class="card-header-row">
-                    <div class="icon-circle indigo">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2D6A35" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="4" width="20" height="16" rx="2"/>
                             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
                         </svg>
@@ -201,11 +202,11 @@
         </div>
 
         <div class="card">
-            <div class="card-stripe emerald"></div>
+            <div class="card-stripe alt"></div>
             <div class="card-body">
                 <div class="card-header-row">
-                    <div class="icon-circle emerald">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2D6A35" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="3" y="11" width="18" height="11" rx="2"/>
                             <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
                         </svg>
